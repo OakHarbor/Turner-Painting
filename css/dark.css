@@ -164,7 +164,6 @@
 	background: -o-linear-gradient(#222, #000);	
 	background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#000));	
 	background: linear-gradient(#222, #000);	
-    height: 120%;
 }
 
 .dark {
@@ -274,21 +273,15 @@ h3.dark-mode {
 
 @media screen and (min-width: 992px) {
 
-    header {
-        max-width: 1100px;
-        position: relative;
-        margin: auto;
-    }
-
     .navbar-menu.dark-mode {
         overflow: visible;
     }
     
     .top-dark-mode-button {
         position: absolute;
-        right: 0px;
+        right: 10px;
         left: unset;
-        top: 55px;
+        top: 49px;
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);
@@ -306,7 +299,12 @@ h3.dark-mode {
     .navbar-menu.dark-mode {
         -webkit-box-shadow: none;
                 box-shadow: none;
-        background-color: transparent;
-        height: 100px;
+        background: #000;
     }
+}
+
+@media screen and (min-width: 1300px) {
+	.top-dark-mode-button {
+		top: 60px;
+	}
 }

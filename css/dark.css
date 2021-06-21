@@ -360,3 +360,9 @@ body.dark-mode #footer {
 		top: 60px;
 	}
 }
+
+@media screen and (min-width: 1500px) {
+    body.dark-mode .split .right .one {
+        border-bottom: none;
+    }
+}

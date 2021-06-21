@@ -1,5 +1,4 @@
 
-
 /*-- -------------------------- -->
 <---          Landing           -->
 <--- -------------------------- -*/
@@ -202,7 +201,7 @@
 /* Tablet */
 @media screen and (min-width: 768px) {
 
-    .container {
+    body.container {
         max-width: 850px;
     }
 
@@ -535,6 +534,12 @@
                 animation-direction: normal;
         -webkit-animation-fill-mode: forwards;
                 animation-fill-mode: forwards;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #services .circle-box {
+        margin-left: -1141px;
     }
 }
 
@@ -2196,6 +2201,17 @@
       }
   }
 
+  @media only screen and (min-width: 1800px) {
+    .bubble-top {
+        margin-left: 716px;
+        top: -38px;
+    }
+
+    .bubble-bottom {
+        bottom: -136px;
+        margin-left: -945px;
+    }
+  }
 /*-- -------------------------- -->
 <---        Testimonials        -->
 <--- -------------------------- -*/

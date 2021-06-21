@@ -123,9 +123,9 @@
     }
 
     .heroText {
-        -webkit-transform: translateY(200px);
-            -ms-transform: translateY(200px);
-                transform: translateY(200px);
+        -webkit-transform: translateY(100px);
+            -ms-transform: translateY(100px);
+                transform: translateY(100px);
         margin-bottom: 50px;
     }
 
@@ -142,7 +142,7 @@
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%);
-        bottom: -250px;
+        bottom: -200px;
         border-radius: 50%;
     }
 
@@ -153,14 +153,38 @@
         position: absolute;
         left: 50%;
         margin-left: -200px;
-        bottom: 250px;
+        bottom: 300px;
         border-radius: 50%;
         display: block;
+        -webkit-animation-name: bobbleOne;
+                animation-name: bobbleOne;
+        -webkit-animation-duration: 5s;
+                animation-duration: 5s;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
     }
 
     .little-circle:after {
         height: 40px;
         width: 40px;
+        -webkit-animation-name: bobbleTwo;
+                animation-name: bobbleTwo;
+        -webkit-animation-duration: 4s;
+                animation-duration: 4s;
+        -webkit-animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
     }
 }
 
@@ -369,7 +393,7 @@
 
 @media screen and (min-width: 375px) {
     #services {
-        padding-top: 140px;
+        padding-top: 50px;
     }
 }
 

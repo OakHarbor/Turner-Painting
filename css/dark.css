@@ -288,6 +288,29 @@ body.dark-mode #footer {
     background: #1c2935;
 }
 
+
+
+
+/*-- -------------------------- -->
+<---           About            -->
+<--- -------------------------- -*/
+
+body.dark-mode .number-group h4 {
+    color: #fff;
+}
+
+body.dark-mode .quality-item h3 {
+    color: #fff;
+}
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+body.dark-mode #contact-strip {
+    background: var(--dark);
+}
+
 /* Tablets */
 @media screen and (min-width: 500px) and (max-width: 1025px) {
 
@@ -302,9 +325,10 @@ body.dark-mode #footer {
     
     .top-dark-mode-button {
         position: absolute;
-        right: 10px;
-        left: auto;
-        top: 60px;
+        right: auto;
+        left: 50%;
+        top: 50px;
+        margin-left: 680px;
         -webkit-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
                 transform: rotate(-90deg);
@@ -312,7 +336,7 @@ body.dark-mode #footer {
     }
 
     .top-dark-mode-button:after {
-        color: #fff;
+        color: #000;
     }
 
     body.dark-mode .navbar-menu {
@@ -353,12 +377,6 @@ body.dark-mode #footer {
     body.dark-mode #portfolio:before {
         background: #1c4a49;
     }
-}
-
-@media screen and (min-width: 1300px) {
-	.top-dark-mode-button {
-		top: 60px;
-	}
 }
 
 @media screen and (min-width: 1500px) {

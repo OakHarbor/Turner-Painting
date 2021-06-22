@@ -1,160 +1,362 @@
 /*-- -------------------------- -->
-<---           REVIEWS          -->
+<---           LANDING          -->
 <--- -------------------------- -*/
 
-#trust-us {
-    background:url("../images/duality-painting-house-painters-rohnert-park-ca-img-14.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+@media only screen and (min-width: 0em) {
+
+    #hero {
+        min-height: 400px;
+        height: 400px;
+        background: url('/images/about-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        color: #fff;
+    }
+    
+    #dark {
+        background: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 20;
+        opacity: .7;
+    }
+    
+    #home-h {
+        width: 200px;
+        text-align: center;
+        font-size: 3.4375em;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        z-index: 50;
+        margin-top: 50px;
+        color: #fff;
+    }
+    
+    #home-h:before {
+        content: '';
+        position: absolute;
+        width: 180px;
+        height: 200px;
+        border: 10px solid rgba(255,218,45, .4);
+        z-index: -1;
+    }
+    
+    .white-comb {
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+        z-index: 100;
+    }
+    
+    .white-comb.dark-mode {
+        display: none !important;
+    }
+    
+    .dark-comb.dark-mode {
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        z-index: 100;
+    }
 }
 
-.review-group {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    position: relative;
-    border: none;
-}
+@media only screen and (min-width: 48em) {
 
-.review-group h3:first-child {
-    position: relative;
-    z-index: 10;
-    color: #121212;
-    text-align: center;
-    font-size: 1.750em;
-    font-weight: 800;
-    margin-bottom: 00px;
-    margin-top: 70px;
-}
-
-.review-h3 {
-    color: #121212;
-    position: relative;
-    padding-left: 36px;
-    padding-right: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.review-h3:before {
-    content: '';
-    position: absolute;
-    background: transparent;
-    height: 190px;
-    width: 180px;
-    border: 10px solid rgba(255, 255, 255, .3);
-    top: -50px;
-}
-
-.review-p {
-    position: relative;
-    z-index: 10;
-    color: #121212;
-    font-size: 1.250em;
-    text-align: center;
-    margin-bottom: 120px;
-    padding-left: 36px;
-    padding-right: 36px;
-}
-
-.review {
-    position: relative;
-    z-index: 10;
-    margin: 70px auto;
-}
-
-.review:last-child {
-    margin-bottom: 0px;
-}
-
-.review p,
-.review h3 {
-    color: #121212;
-}
-
-.review h3 {
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.6em;
-}
-
-.review-content {
-    font-size: 1em;
-    margin-bottom: 10px;
-    font-weight: normal;
-}
-
-.stars {
-    margin: 20px 0 10px 0;
-    width: 100px;
-}
-
-.stars svg {
-    width: 10px;
-    height: auto;
-}
-
-.review p:nth-child(2) {
-    font-size: 0.938em;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.review p:nth-child(3) {
-    font-size: 0.875em !important;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Tablets */
-@media screen and (min-width: 500px) and (max-width: 1024px) {
-
-    /*-- -------------------------- -->
-    <---         TESTIMOBIALS       -->
-    <--- -------------------------- -*/
-
-    .review-group {
-        padding-bottom: 100px;
+    #hero {
+        position: relative;
+        height: 600px;
     }
 
-    .review-h3:before {
-        height: 190px;
+    #home-h {
+        font-size: 4.375em;
+        margin-bottom: 0;
     }
 
-    .review-p {
-        width: 290px;
-        margin: auto;
-        margin-bottom: 130px;
-        font-size: 1em;
+    #hero img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 40;
     }
 
+    .white-comb {
+        position: absolute;
+        bottom: -2px !important;
+    }
 }
 
-/* Desktop */
-@media screen and (min-width: 1025px) {
+@media only screen and (min-width: 64em) {
 
-    /*-- -------------------------- -->
-    <---        TESTIMONIALS        -->
-    <--- -------------------------- -*/
-
-    #trust-us {
+    #hero {
+        height: 600px;
+        background: url('/images/about.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         background-attachment: fixed;
+        position: relative;
     }
 
-    .review-group {
-        width: 900px;
-        margin: auto;
-        margin-bottom: 50px;
+    #home-h {
+        -webkit-transform: translateY(40px);
+            -ms-transform: translateY(40px);
+                transform: translateY(40px);
+        font-size: 4.375em;
     }
+
+    #hero img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 40;
+    }
+}
+
+/*-- -------------------------- -->
+<---        Testimonials        -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0) {
+
+    #reviews {
+        padding-top: 35px;
+        padding-bottom: 150px;
+    }
+
+    #reviews h2, #reviews .yellow-span {
+        display: block;
+        text-align: center;
+    }
+
+    #reviews .stars {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    #reviews .stars svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #reviews p {
+        text-align: center;
+    }
+
+    #reviews .name {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin-top: 50px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #reviews .name:before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #F2C613;
+        opacity: .4;
+        z-index: -1;
+    }
+
+    #reviews a {
+        margin-top: 50px;
+    }
+  }
+  
+/* Landscape */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+
 
 }
 
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1024px) {
+
+#reviews {
+    padding: 0px 0 100px;
+}
+
+#reviews .stars {
+    margin-top: 150px;
+}
+
+#reviews p {
+    width: 800px;
+    margin: auto;
+}
+
+#reviews a {
+    width: 173px;
+}
+}
+
+/* Regular Desktop */
+@media only screen and (min-width: 1300px) {
+
+
+}
+
+/*-- -------------------------- -->
+<---           Contact          -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    #contact-strip {
+        padding: 50px 36px 150px;
+        position: relative;
+        background: var(--primary);
+    }
+    
+    .about-about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .about-contact-group h2 {
+        color: #000;
+        font-size: 1.875em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .top p {
+        color: #000;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    
+    .contact-button {
+        background: #fff;
+        color: #4c4c4c;
+        width: 200px;
+    }
+
+    #contact-strip a:hover {
+        background: #2D3D4C;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+
+    #contact-strip {
+        padding-top: 100px;
+    }
+
+    .about-contact-group {
+        width: 600px;
+        margin: auto;
+    }
+
+    
+}
+
+@media only screen and (min-width: 64em) {
+
+    #contact-strip:before {
+        top: -1px;
+    }
+
+    .about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-contact-group h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .about-contact-group p {
+        text-align: left;
+    }
+
+    .about-contact-group a {
+        margin-right: 0;
+    }
+}

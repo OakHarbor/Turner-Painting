@@ -219,3 +219,110 @@ html.clicked {
     }
 
 }
+
+/*-- -------------------------- -->
+<---           Contact          -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0em) {
+
+    #contact-strip {
+        padding: 50px 36px 150px;
+        position: relative;
+        background: var(--primary);
+    }
+    
+    .about-about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .about-contact-group h2 {
+        color: #000;
+        font-size: 1.875em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .top p {
+        color: #000;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 400px;
+    }
+    
+    .contact-button {
+        background: #fff;
+        color: #4c4c4c;
+        width: 200px;
+    }
+
+    #contact-strip a:hover {
+        background: #2D3D4C;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 48em) {
+
+    #contact-strip {
+        padding-top: 100px;
+    }
+
+    .about-contact-group {
+        width: 600px;
+        margin: auto;
+    }
+
+    
+}
+
+@media only screen and (min-width: 64em) {
+
+    #contact-strip:before {
+        top: -1px;
+    }
+
+    .about-contact-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-contact-group h2 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .about-contact-group p {
+        text-align: left;
+    }
+
+    .about-contact-group a {
+        margin-right: 0;
+    }
+}
